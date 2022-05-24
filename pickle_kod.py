@@ -50,8 +50,8 @@ def on_mouse_down(pos):
     if pickle.collidepoint(pos):
         if skin == "deafult" or skin == "rickle":
             points += 1
-            pickle.y = random.randint(60,840)
-            pickle.x = random.randint(60,840)
+            pickle.y = random.randint(65,835)
+            pickle.x = random.randint(65,835)
             sounds.splash.play()
             highscore_file = open("highscore.txt", "w")
             highscore_file.write(str(points))
